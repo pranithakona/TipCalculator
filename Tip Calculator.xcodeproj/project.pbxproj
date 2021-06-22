@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3308501A26827C2C005F9CBB /* TipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3308501926827C2C005F9CBB /* TipViewController.m */; };
 		337CFE2726826D4700507C54 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 337CFE2626826D4700507C54 /* AppDelegate.m */; };
 		337CFE2A26826D4700507C54 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 337CFE2926826D4700507C54 /* SceneDelegate.m */; };
-		337CFE2D26826D4700507C54 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 337CFE2C26826D4700507C54 /* ViewController.m */; };
 		337CFE3026826D4700507C54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 337CFE2E26826D4700507C54 /* Main.storyboard */; };
 		337CFE3226826D4900507C54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 337CFE3126826D4900507C54 /* Assets.xcassets */; };
 		337CFE3526826D4900507C54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 337CFE3326826D4900507C54 /* LaunchScreen.storyboard */; };
@@ -36,13 +36,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3308501826827C2C005F9CBB /* TipViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TipViewController.h; sourceTree = "<group>"; };
+		3308501926827C2C005F9CBB /* TipViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TipViewController.m; sourceTree = "<group>"; };
 		337CFE2226826D4700507C54 /* Tip Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tip Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		337CFE2526826D4700507C54 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		337CFE2626826D4700507C54 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		337CFE2826826D4700507C54 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		337CFE2926826D4700507C54 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		337CFE2B26826D4700507C54 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		337CFE2C26826D4700507C54 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		337CFE2F26826D4700507C54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		337CFE3126826D4900507C54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		337CFE3426826D4900507C54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -104,12 +104,12 @@
 		337CFE2426826D4700507C54 /* Tip Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				3308501826827C2C005F9CBB /* TipViewController.h */,
+				3308501926827C2C005F9CBB /* TipViewController.m */,
 				337CFE2526826D4700507C54 /* AppDelegate.h */,
 				337CFE2626826D4700507C54 /* AppDelegate.m */,
 				337CFE2826826D4700507C54 /* SceneDelegate.h */,
 				337CFE2926826D4700507C54 /* SceneDelegate.m */,
-				337CFE2B26826D4700507C54 /* ViewController.h */,
-				337CFE2C26826D4700507C54 /* ViewController.m */,
 				337CFE2E26826D4700507C54 /* Main.storyboard */,
 				337CFE3126826D4900507C54 /* Assets.xcassets */,
 				337CFE3326826D4900507C54 /* LaunchScreen.storyboard */,
@@ -266,9 +266,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				337CFE2D26826D4700507C54 /* ViewController.m in Sources */,
 				337CFE2726826D4700507C54 /* AppDelegate.m in Sources */,
 				337CFE3826826D4900507C54 /* main.m in Sources */,
+				3308501A26827C2C005F9CBB /* TipViewController.m in Sources */,
 				337CFE2A26826D4700507C54 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
