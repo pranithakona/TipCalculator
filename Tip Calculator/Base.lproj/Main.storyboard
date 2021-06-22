@@ -64,21 +64,49 @@
                                     <segment title="20%"/>
                                     <segment title="25%"/>
                                 </segments>
+                                <connections>
+                                    <action selector="updateLabels:" destination="HUA-4T-nMz" eventType="valueChanged" id="V1H-KB-2af"/>
+                                </connections>
                             </segmentedControl>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="inr-Kq-rgb">
                                 <rect key="frame" x="161" y="124" width="201" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" systemColor="systemOrangeColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="updateLabels:" destination="HUA-4T-nMz" eventType="editingChanged" id="Bil-2l-pbI"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="HzI-pb-2jY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="NTZ-Nf-V2C" appends="YES" id="00s-dI-1LF"/>
+                            <outletCollection property="gestureRecognizers" destination="NTZ-Nf-V2C" appends="YES" id="lQo-dx-Boq"/>
+                            <outletCollection property="gestureRecognizers" destination="bdb-f7-hXj" appends="YES" id="wm1-L6-vpE"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="Hm5-3x-Tgw"/>
+                    <connections>
+                        <outlet property="billField" destination="inr-Kq-rgb" id="7bH-ts-4RV"/>
+                        <outlet property="tipLabel" destination="IfC-nk-Vdd" id="PtX-CK-ZTV"/>
+                        <outlet property="tipPercentControl" destination="zHH-We-P8P" id="iLS-Gd-f1U"/>
+                        <outlet property="totalLabel" destination="Ngh-PL-8aP" id="wEv-Af-4d7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t5I-yL-BX0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="NTZ-Nf-V2C">
+                    <connections>
+                        <action selector="onTap:" destination="HUA-4T-nMz" id="Yh6-pc-Z4R"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="bdb-f7-hXj">
+                    <connections>
+                        <action selector="onTap:" destination="HUA-4T-nMz" id="bfq-B1-0zb"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-539.13043478260875" y="70.982142857142847"/>
         </scene>
