@@ -21,6 +21,9 @@
 @property (weak, nonatomic) IBOutlet UILabel *splitLabel;
 @property (weak, nonatomic) IBOutlet UIStepper *splitStepper;
 @property (weak, nonatomic) IBOutlet UITextField *customTipField;
+@property (weak, nonatomic) IBOutlet UILabel *currencySymbolLabel;
+@property (strong, nonatomic) IBOutlet UIView *secondView;
+@property (strong, nonatomic) IBOutlet UIView *firstView;
 
 @end
 
@@ -29,6 +32,15 @@ double tipPercent;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.firstView.alpha = 1;
+    self.secondView.alpha = 0;
+
+    [UIView animateWithDuration:0.4 animations:^{
+        // This causes first view to fade in and second view to fade out
+        self.firstView.alpha = 0;
+        self.secondView.alpha = 1;
+    }];
     
     NSArray *tipButtons = [[NSArray alloc]
        initWithObjects:self.tipPercent10Button,self.tipPercent15Button,self.tipPercent20Button,self.tipPercent25Button,self.tipPercentCustomButton, nil];
@@ -39,6 +51,7 @@ double tipPercent;
     }
     
     self.bottomView.layer.cornerRadius = 25.0;
+
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -65,19 +78,24 @@ double tipPercent;
         self.customTipField.text = @"";
     }
     [self updateLabels:self];
+    
 }
 
 - (IBAction)onTap:(id)sender {
     [self.view endEditing:true];
 }
 - (IBAction)updateLabels:(id)sender {
+    NSNumberFormatter *numberFormatter = [[NSNumberFormatter alloc] init];
+    [numberFormatter setNumberStyle: NSNumberFormatterCurrencyStyle];
+    
     double bill = [self.billField.text doubleValue]/self.splitStepper.value;
     double tip = ([self.billField.text doubleValue]/self.splitStepper.value) * tipPercent;
     double total = bill + tip;
     
-    self.billLabel.text = [NSString stringWithFormat:@"$%.2f", bill];
-    self.tipLabel.text = [NSString stringWithFormat:@"$%.2f", tip];
-    self.totalLabel.text = [NSString stringWithFormat:@"$%.2f", total];
+    self.currencySymbolLabel.text = numberFormatter.currencySymbol;
+    self.billLabel.text = [numberFormatter stringFromNumber:[NSNumber numberWithFloat:bill]];
+    self.tipLabel.text = [numberFormatter stringFromNumber:[NSNumber numberWithFloat:tip]];
+    self.totalLabel.text = [numberFormatter stringFromNumber:[NSNumber numberWithFloat:total]];
 }
 - (IBAction)updateSplit:(id)sender {
     self.splitLabel.text = [NSString stringWithFormat:@"%.20f",self.splitStepper.value];
@@ -110,6 +128,8 @@ double tipPercent;
     }
     _sender.backgroundColor = [UIColor colorWithRed: 58/255.0 green: 132/255.0 blue: 82/255.0 alpha: 1.0];
     [_sender setTitleColor: [UIColor colorWithRed: 255/255.0 green: 255/255.0 blue: 255/255.0 alpha: 1.0] forState: UIControlStateNormal];
+    
+    
     
 }
 

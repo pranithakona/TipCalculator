@@ -224,7 +224,9 @@
                         <outlet property="billField" destination="inr-Kq-rgb" id="7bH-ts-4RV"/>
                         <outlet property="billLabel" destination="juU-YP-Wnn" id="qqy-6n-dzi"/>
                         <outlet property="bottomView" destination="S9g-IO-yRl" id="ekh-Za-hiT"/>
+                        <outlet property="currencySymbolLabel" destination="D8Q-Fm-hb7" id="eNa-tv-ltT"/>
                         <outlet property="customTipField" destination="pMf-wt-DuZ" id="Uv9-kf-NlH"/>
+                        <outlet property="secondView" destination="Myx-ye-5Gd" id="jdr-j4-3x8"/>
                         <outlet property="splitLabel" destination="fXF-Lv-D7w" id="F3n-0w-6Uu"/>
                         <outlet property="splitStepper" destination="jIP-0L-n5G" id="3H3-tt-ky1"/>
                         <outlet property="tipLabel" destination="Ab6-SR-zBd" id="m6l-vy-hsA"/>
