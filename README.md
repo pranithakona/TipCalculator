@@ -34,7 +34,7 @@ GIF created with [Kap](https://getkap.co/).
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+It was a bit difficult to make this app since it was my first time working with iOS and Objective-C but it was overall a fun experience and I learned a lot from it!
 
 ## Credits
 
