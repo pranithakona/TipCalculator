@@ -4,7 +4,7 @@
 
 Submitted by: **Pranitha Kona**
 
-Time spent: **2** hours spent in total
+Time spent: **4** hours spent in total
 
 ## User Stories
 
@@ -28,7 +28,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://imgur.com/a/5bn7ev5.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src="https://imgur.com/a/5bn7ev5.gif" title='Video Walkthrough' width='' alt='Video Walkthrough' />
 ![Imgur](https://imgur.com/a/5bn7ev5.gif)
 
 GIF created with [Kap](https://getkap.co/).
