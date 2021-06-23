@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		3308501A26827C2C005F9CBB /* TipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3308501926827C2C005F9CBB /* TipViewController.m */; };
+		334419392682AB8E0018F4FE /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 334419382682AB8E0018F4FE /* SettingsViewController.m */; };
+		3344193C2682C9670018F4FE /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3344193B2682C9670018F4FE /* SettingViewController.m */; };
+		334419442682D4D60018F4FE /* tip-5.png in Resources */ = {isa = PBXBuildFile; fileRef = 334419432682D4D60018F4FE /* tip-5.png */; };
 		337CFE2726826D4700507C54 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 337CFE2626826D4700507C54 /* AppDelegate.m */; };
 		337CFE2A26826D4700507C54 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 337CFE2926826D4700507C54 /* SceneDelegate.m */; };
 		337CFE3026826D4700507C54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 337CFE2E26826D4700507C54 /* Main.storyboard */; };
@@ -38,6 +41,11 @@
 /* Begin PBXFileReference section */
 		3308501826827C2C005F9CBB /* TipViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TipViewController.h; sourceTree = "<group>"; };
 		3308501926827C2C005F9CBB /* TipViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TipViewController.m; sourceTree = "<group>"; };
+		334419372682AB8E0018F4FE /* SettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		334419382682AB8E0018F4FE /* SettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		3344193A2682C9670018F4FE /* SettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		3344193B2682C9670018F4FE /* SettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		334419432682D4D60018F4FE /* tip-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tip-5.png"; path = "../../../../Downloads/tip-5.png"; sourceTree = "<group>"; };
 		337CFE2226826D4700507C54 /* Tip Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tip Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		337CFE2526826D4700507C54 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		337CFE2626826D4700507C54 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -111,7 +119,12 @@
 				337CFE2826826D4700507C54 /* SceneDelegate.h */,
 				337CFE2926826D4700507C54 /* SceneDelegate.m */,
 				337CFE2E26826D4700507C54 /* Main.storyboard */,
+				334419372682AB8E0018F4FE /* SettingsViewController.h */,
+				334419382682AB8E0018F4FE /* SettingsViewController.m */,
+				3344193A2682C9670018F4FE /* SettingViewController.h */,
+				3344193B2682C9670018F4FE /* SettingViewController.m */,
 				337CFE3126826D4900507C54 /* Assets.xcassets */,
+				334419432682D4D60018F4FE /* tip-5.png */,
 				337CFE3326826D4900507C54 /* LaunchScreen.storyboard */,
 				337CFE3626826D4900507C54 /* Info.plist */,
 				337CFE3726826D4900507C54 /* main.m */,
@@ -242,6 +255,7 @@
 				337CFE3526826D4900507C54 /* LaunchScreen.storyboard in Resources */,
 				337CFE3226826D4900507C54 /* Assets.xcassets in Resources */,
 				337CFE3026826D4700507C54 /* Main.storyboard in Resources */,
+				334419442682D4D60018F4FE /* tip-5.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,8 +282,10 @@
 			files = (
 				337CFE2726826D4700507C54 /* AppDelegate.m in Sources */,
 				337CFE3826826D4900507C54 /* main.m in Sources */,
+				334419392682AB8E0018F4FE /* SettingsViewController.m in Sources */,
 				3308501A26827C2C005F9CBB /* TipViewController.m in Sources */,
 				337CFE2A26826D4700507C54 /* SceneDelegate.m in Sources */,
+				3344193C2682C9670018F4FE /* SettingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
